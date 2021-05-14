@@ -1,0 +1,12 @@
+@import "../../assets/variables.scss";
+
+.input {
+  margin-top: 48px;
+}
+
+.inputError {
+  margin-top: 16px;
+  margin-bottom: 48px;
+  color: $red;
+  font-size: 15px;
+}
