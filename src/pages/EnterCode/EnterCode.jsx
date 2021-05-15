@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./EnterCode.module.scss";
 import Button from "../../components/Button/Button";
 import AuthLayout from "../../components/layouts/AuthLayout";
+import ReactCodeInput from "react-code-input";
 
 const EnterCode = () => {
   return (
@@ -15,6 +16,11 @@ const EnterCode = () => {
           Изменить номер
         </a>
       </div>
+      <ReactCodeInput
+        className={styles.input}
+        type="text"
+        fields={6}
+      />
       <p className={styles.try}>
         Отправить ещё раз через<span className={styles.timer}>00:59</span>
       </p>

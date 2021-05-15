@@ -3,6 +3,7 @@
 .row {
   margin-top: 3px;
   display: flex;
+  margin-bottom: 48px;
 }
 
 .telephone {
@@ -18,7 +19,7 @@
 }
 
 .try {
-  margin-top: 100px;
+  margin-top: 99px;
   text-align: center;
   margin-bottom: 30px;
   color: $grey;
@@ -27,4 +28,29 @@
 .timer {
   color: $black;
   margin-left: 6px;
+}
+
+.input{
+  input {
+    padding: 16px;
+    font-size: 17px;
+    border: 1px $dark-grey-input solid;
+    border-radius: 16px;
+    width: 44px;
+    box-sizing: border-box;
+  }
+
+  input:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  input:nth-child(3) {
+    margin-right: 16px;
+  }
+
+  input:focus {
+    border-radius: 16px;
+    outline: none;
+    border: 1px $green solid;
+  }
 }
