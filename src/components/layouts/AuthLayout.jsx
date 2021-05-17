@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AuthLayout.module.scss";
 import logo from "../../assets/images/icons/logo.svg";
 
-const AuthLayout = ({ children, title, subtitle }) => {
+const AuthLayout = ({ children, title, subtitle, icon, steps }) => {
   return (
     <div className={styles.page}>
       <div className={`container ${styles.container}`}>
@@ -11,6 +11,8 @@ const AuthLayout = ({ children, title, subtitle }) => {
             <img className={styles.logo} src={logo} alt="logo" />
           </a>
           <div className={styles.form}>
+            {icon ? <img className={styles.icon} src={icon} alt="icon"/> : ""}
+            {steps ? <p className={styles.steps}>{steps}</p> : ""}
             <p className={styles.formTitle}>{title}</p>
             <p className={styles.formSubTitle}>{subtitle}</p>
             {children}
