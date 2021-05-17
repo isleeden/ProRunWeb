@@ -1,0 +1,67 @@
+@import "../../assets/variables.scss";
+
+.selectWrapper {
+  position: relative;
+  margin: 48px 0;
+}
+
+.select {
+  border-radius: 20px;
+  padding: 16px;
+  font-size: 17px;
+  color: $grey;
+  border: 1px solid $dark-grey-input;
+}
+
+.selected {
+  color: $black;
+}
+
+.focused {
+  border: 1px solid $green;
+}
+
+.selectArrow {
+  position: absolute;
+  width: 16px;
+  top: 20px;
+  right: 23px;
+  transition: transform 0.5s;
+}
+
+.selectArrowActive {
+  transform: rotate(180deg);
+}
+
+.options {
+  width: 100%;
+  max-height: 276px;
+  box-sizing: border-box;
+  background-color: $white;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  border: 1px $dark-grey-input solid;
+  padding: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.55s opacity, 0.55s visibility;
+  border-radius: 16px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 16px rgba($color: #1e1e26, $alpha: 0.16);
+}
+
+.option {
+  padding: 16px 20px 14px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f5f7fb;
+}
+
+.optionsActive {
+  visibility: visible;
+  opacity: 1;
+}
