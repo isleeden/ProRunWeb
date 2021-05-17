@@ -58,7 +58,7 @@ const PhoneInput = () => {
   return (
     <div
       className={`${styles.phoneForm} ${
-        isFocused ? styles.phoneFormFocused : ""
+        isFocused || isSelectOpen ? styles.phoneFormFocused : ""
       }`}
     >
       <div
