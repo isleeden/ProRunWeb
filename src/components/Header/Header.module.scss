@@ -1,0 +1,48 @@
+@import "../../assets/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 16px 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  padding: 24px 42px 32px;
+  border-radius: 24px;
+  font-weight: 600;
+  align-items: center;
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+.linkActive {
+  background-color: $light-grey;
+  color: $black;
+}
+
+.linkIcon {
+  margin-right: 18px;
+}
+
+.login {
+  display: flex;
+  padding: 24px 37px 24px 35px;
+  background-color: $green;
+  border-radius: 24px;
+  color: $white;
+  text-decoration: none;
+}
+
+.loginIcon {
+  margin-right: 18px;
+}
