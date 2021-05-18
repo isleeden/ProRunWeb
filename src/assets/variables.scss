@@ -9,3 +9,9 @@ $green: #239a59;
 $grey: #c0c4ce;
 $dark-grey: #8790a6;
 $light-grey: #f5f7fb;
+
+%h1 {
+  color: $black;
+  font-size: 32px;
+  font-weight: 700;
+}
