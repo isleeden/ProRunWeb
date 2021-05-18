@@ -1,0 +1,19 @@
+@import "../../../assets/variables.scss";
+
+.navItem {
+  display: flex;
+  padding: 16px 28px 16px 24px;
+  align-items: center;
+  border-radius: 20px;
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+.navItemActive {
+  background-color: $light-grey;
+  color: $black;
+}
+
+.icon {
+  margin-right: 12px;
+}
