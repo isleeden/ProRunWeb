@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.header}>
-          <img src={logo} className={styles.logo} />
+          <img src={logo} className={styles.logo} alt="logo"/>
           <div className={styles.appLinks}>
             <a className={styles.appLink} href="/">
               <img src={googlePlay} alt="googlePlay" />

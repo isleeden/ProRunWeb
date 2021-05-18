@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import dateBirthPage from "../../assets/images/icons/dateBirthPage.svg";
 import Button from "../../components/Button/Button";
 import AuthLayout from "../../components/layouts/AuthLayout";

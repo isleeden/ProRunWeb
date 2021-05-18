@@ -2,7 +2,6 @@ import React from "react";
 import ReactCodeInput from "react-code-input";
 import Button from "../../components/Button/Button";
 import AuthLayout from "../../components/layouts/AuthLayout";
-import PasswordInput from "../../components/PasswordInput/PasswordInput";
 import styles from "./ResetPassword.module.scss";
 
 const ResetPassword = () => {

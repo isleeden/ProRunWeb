@@ -35,7 +35,7 @@ const EnterName = () => {
                   backgroundSize: `${file ? "cover" : "auto"}`,
                 }}
               ></label>
-              <img src={avatarWhite} />
+              <img src={avatarWhite} alt="avatar"/>
             </div>
             <input onChange={handleChange} id="fileInput" type="file" />
           </div>
