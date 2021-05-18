@@ -1,0 +1,58 @@
+@import "../../assets/variables.scss";
+
+.competition {
+  box-sizing: border-box;
+  padding: 24px;
+  width: 540px;
+  background-size: cover;
+  border-radius: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: $white;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.distance {
+  display: inline-block;
+  padding: 7px 21px 8px 16px;
+  background-color: rgba($color: $black, $alpha: 0.16);
+  border-radius: 16px;
+  margin-bottom: 110px;
+}
+
+.distanceImage {
+  vertical-align:middle;
+  margin-right: 8px;
+}
+
+.distanceText {
+  font-size: 13px;
+  color: $white;
+  display: inline;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.membersText {
+  font-size: 13px;
+  padding: 7px 14px 8px 12px;
+  background-color: rgba($color: $black, $alpha: 0.16);
+  color: $white;
+  border-radius: 12px;
+}
+
+.wrapperButton {
+  flex-basis: 143px;
+}
+
+.dark {
+  background-color: rgba($color: $white, $alpha: 0.16);
+}
