@@ -4,14 +4,15 @@ import styles from "./Competitions.module.scss";
 import CompetitionsNav from "../../../components/CompetitionsNav/CompetitionsNav";
 import Section from "../../../components/Section/Section";
 import CurrentCompetition from "../../../components/CurrentCompetition/CurrentCompetition";
+import FutureCompetition from "../../../components/FutureCompetition/FutureCompetition";
 import walk from "../../../assets/images/icons/walk.svg";
 import run from "../../../assets/images/icons/run.svg";
 import bicycle from "../../../assets/images/icons/bicycle.svg";
 import image1 from "../../../assets/images/currentCompetition1.png";
 import image2 from "../../../assets/images/currentCompetition2.png";
-import image3 from "../../../assets/images/futureCompetition1.png"
-import image4 from "../../../assets/images/futureCompetition2.png"
-import image5 from "../../../assets/images/futureCompetition3.png"
+import image3 from "../../../assets/images/futureCompetition1.png";
+import image4 from "../../../assets/images/futureCompetition2.png";
+import image5 from "../../../assets/images/futureCompetition3.png";
 
 const currentCompetitions = [
   {
@@ -37,23 +38,23 @@ const futureCompetitions = [
     distance: "42 км",
     date: "с 10 по 30 октября, 2020 г",
     icon: bicycle,
-    image: image3
+    image: image3,
   },
   {
     title: "Ходьба в центре Ташкента на 5, 10 и 15 км среди любителей",
     distance: "15 км",
     date: "с 15 октября по 15 ноября, 2020 г",
     icon: walk,
-    image: image4
+    image: image4,
   },
   {
     title: "Ходьба в центре Ташкента среди детей",
     distance: "15 км",
     date: "с 15 октября по 15 ноября, 2020 г",
     icon: walk,
-    image: image5
-  }
-]
+    image: image5,
+  },
+];
 
 const Competitions = () => {
   return (
@@ -68,7 +69,7 @@ const Competitions = () => {
               subtitle="Участвуйте в мероприятиях, которые проходят прямо сейчас"
               link="/"
             >
-              <div className={styles.currentSection}>
+              <div className={styles.sectionContent}>
                 {currentCompetitions.map((item) => {
                   return <CurrentCompetition {...item} />;
                 })}
@@ -81,7 +82,13 @@ const Competitions = () => {
               title="Будущие мероприятия"
               subtitle="Ну пропустите мероприятия, которые начнутся очень скоро"
               link="/"
-            ></Section>
+            >
+              <div className={styles.sectionContent}>
+                {futureCompetitions.map((item) => {
+                  return <FutureCompetition {...item} />;
+                })}
+              </div>
+            </Section>
           </div>
           <div className={styles.eventSection}>
             <Section
