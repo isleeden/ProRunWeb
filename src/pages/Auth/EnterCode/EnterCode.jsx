@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./EnterCode.module.scss";
-import Button from "../../components/Button/Button";
-import AuthLayout from "../../components/layouts/AuthLayout";
+import Button from "../../../components/Button/Button";
+import AuthLayout from "../../../components/layouts/AuthLayout";
 import ReactCodeInput from "react-code-input";
 
 const EnterCode = () => {
