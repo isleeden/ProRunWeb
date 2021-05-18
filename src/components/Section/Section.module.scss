@@ -1,0 +1,31 @@
+@import "../../assets/variables.scss";
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.arrow {
+  margin-left: 34px;
+  display: none;
+
+  img {
+    transform: rotate(-90deg);
+  }
+}
+
+.showArrow {
+  display: block;
+}
+
+.subtitle {
+  margin-bottom: 23px;
+  font-size: 15px;
+}
