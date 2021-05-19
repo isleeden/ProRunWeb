@@ -1,0 +1,76 @@
+@import "../../../assets/variables.scss";
+
+.title {
+  @extend %h1;
+  margin-bottom: 44px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event {
+  width: 47%;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px $secondary-grey-card solid;
+  background-color: $light-grey;
+}
+
+.map {
+  width: 47%;
+  height: 302px;
+  background-color: #333;
+}
+
+.image {
+  width: 48px;
+  height: 48px;
+  border-radius: 20px;
+  background-color: #333;
+  margin-right: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.row {
+  display: flex;
+}
+
+.eventTitle {
+  min-height: 42px;
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.date {
+  display: flex;
+  font-size: 15px;
+  color: $dark-grey;
+}
+
+.dateIcon {
+  margin-right: 8px;
+}
+
+.chooseDistance {
+  padding: 24px;
+  background-color: $white;
+  border-radius: 24px;
+}
+
+.chooseDistanceTitle {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.distanceWrapper {
+  margin-bottom: 24px;
+}
