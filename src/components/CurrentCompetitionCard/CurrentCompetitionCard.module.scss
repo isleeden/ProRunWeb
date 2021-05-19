@@ -1,0 +1,39 @@
+@import '../../assets/variables.scss';
+
+.card {
+  width: 255px;
+}
+
+.image {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  height: 152px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.body {
+  margin-top: -24px;
+  border-radius: 24px;
+  background-color: $white;
+  padding: 24px;
+  border: 1px $secondary-grey-card solid;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 700;
+  min-height: 64px;
+  margin-bottom: 15px;
+}
+
+.distanceIcon {
+  margin-right: 11px;
+}
+
+.distance {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}

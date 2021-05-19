@@ -1,0 +1,12 @@
+@import "../../../assets/variables.scss";
+
+.title {
+  @extend %h1
+}
+
+.competitionCards {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 30px;
+}
