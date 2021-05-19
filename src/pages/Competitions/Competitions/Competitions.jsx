@@ -5,6 +5,7 @@ import CompetitionsNav from "../../../components/CompetitionsNav/CompetitionsNav
 import Section from "../../../components/Section/Section";
 import CurrentCompetition from "../../../components/CurrentCompetition/CurrentCompetition";
 import FutureCompetition from "../../../components/FutureCompetition/FutureCompetition";
+import MembersList from "../../../components/MembersList/MembersList";
 import walk from "../../../assets/images/icons/walk.svg";
 import run from "../../../assets/images/icons/run.svg";
 import bicycle from "../../../assets/images/icons/bicycle.svg";
@@ -13,6 +14,61 @@ import image2 from "../../../assets/images/currentCompetition2.png";
 import image3 from "../../../assets/images/futureCompetition1.png";
 import image4 from "../../../assets/images/futureCompetition2.png";
 import image5 from "../../../assets/images/futureCompetition3.png";
+import PastEvent from "../../../components/PastEvent/PastEvent";
+
+const members = [
+  {
+    place: 1,
+    name: "Евгения Сидоренко",
+    country: "",
+    number: "3243",
+    time: "00:30:32",
+    avatar: "",
+  },
+  {
+    place: 2,
+    name: "Samantha Brooks",
+    country: "",
+    number: "3243",
+    time: "00:31:04",
+    avatar: "",
+  },
+  {
+    place: 3,
+    name: "Айжан Самедова",
+    country: "",
+    number: "3243",
+    time: "00:31:48",
+    avatar: "",
+  },
+];
+
+const members2 = [
+  {
+    place: 1,
+    name: "Володимир Хмиль",
+    country: "",
+    number: "3243",
+    time: "00:30:32",
+    avatar: "",
+  },
+  {
+    place: 2,
+    name: "Руслан Алимов",
+    country: "",
+    number: "3243",
+    time: "00:30:32",
+    avatar: "",
+  },
+  {
+    place: 3,
+    name: "Баграт Колаян",
+    country: "",
+    number: "3243",
+    time: "00:30:32",
+    avatar: "",
+  },
+];
 
 const currentCompetitions = [
   {
@@ -59,7 +115,7 @@ const futureCompetitions = [
 const Competitions = () => {
   return (
     <Layout>
-      <div className="container">
+      <div className={`container ${styles.container}`}>
         <h1 className={styles.title}>Спортивные мероприятия</h1>
         <CompetitionsNav />
         <div className={styles.events}>
@@ -95,7 +151,30 @@ const Competitions = () => {
               title="Прошедшие мероприятия"
               subtitle="Результаты и статистика участников прошедших мероприятий"
               link="/"
-            ></Section>
+            >
+              <div className={styles.sectionContent}>
+                <div className={styles.eventPastWrapper}>
+                  <PastEvent
+                    title="ProRun Women: Empowerment"
+                    date="30 августа, 2020 г"
+                    options={["5км", "10км", "15км"]}
+                    icon={run}
+                  >
+                    <MembersList members={members} />
+                  </PastEvent>
+                </div>
+                <div className={styles.eventPastWrapper}>
+                  <PastEvent
+                    title="Благотварительный забег Samarkand Online Marathon 2020"
+                    date="29 сентября, 2020 г"
+                    options={["5км", "10км", "15км"]}
+                    icon={run}
+                  >
+                    <MembersList members={members} />
+                  </PastEvent>
+                </div>
+              </div>
+            </Section>
           </div>
         </div>
       </div>
