@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Button from "../../components/Button/Button";
-import AuthLayout from "../../components/layouts/AuthLayout";
-import namePage from "../../assets/images/icons/namePage.svg";
+import Button from "../../../components/Button/Button";
+import AuthLayout from "../../../components/layouts/AuthLayout";
+import namePage from "../../../assets/images/icons/namePage.svg";
 import styles from "./EnterName.module.scss";
-import avatar from "../../assets/images/icons/avatarInput.svg";
-import avatarWhite from "../../assets/images/icons/avatarInputWhite.svg";
+import avatar from "../../../assets/images/icons/avatarInput.svg";
+import avatarWhite from "../../../assets/images/icons/avatarInputWhite.svg";
 
 const EnterName = () => {
   const [file, setFile] = useState(null);

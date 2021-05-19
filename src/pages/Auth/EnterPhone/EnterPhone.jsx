@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./EnterPhone.module.scss";
-import Button from "../../components/Button/Button";
-import PhoneInput from "../../components/PhoneInput/PhoneInput";
-import AuthLayout from "../../components/layouts/AuthLayout";
+import Button from "../../../components/Button/Button";
+import PhoneInput from "../../../components/PhoneInput/PhoneInput";
+import AuthLayout from "../../../components/layouts/AuthLayout";
 
 const EnterPhone = () => {
   return (

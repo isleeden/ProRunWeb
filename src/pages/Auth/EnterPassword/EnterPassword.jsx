@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../../components/Button/Button";
-import AuthLayout from "../../components/layouts/AuthLayout";
-import PasswordInput from "../../components/PasswordInput/PasswordInput"
+import Button from "../../../components/Button/Button";
+import AuthLayout from "../../../components/layouts/AuthLayout";
+import PasswordInput from "../../../components/PasswordInput/PasswordInput"
 
 const EnterPassword = () => {
   return (

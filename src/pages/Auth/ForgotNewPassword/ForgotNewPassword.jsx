@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "../../components/Button/Button";
-import AuthLayout from "../../components/layouts/AuthLayout";
-import PasswordInput from "../../components/PasswordInput/PasswordInput"
-import passwordPage from "../../assets/images/icons/passwordPage.svg"
+import Button from "../../../components/Button/Button";
+import AuthLayout from "../../../components/layouts/AuthLayout";
+import PasswordInput from "../../../components/PasswordInput/PasswordInput"
+import passwordPage from "../../../assets/images/icons/passwordPage.svg"
 
 const ForgotPassword = () => {
   return (

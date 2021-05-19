@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import Button from "../../components/Button/Button";
-import AuthLayout from "../../components/layouts/AuthLayout";
+import Button from "../../../components/Button/Button";
+import AuthLayout from "../../../components/layouts/AuthLayout";
 import styles from "./EnterSex.module.scss";
-import sexPage from "../../assets/images/icons/sexPage.svg";
-import selectArrow from "../../assets/images/icons/selectArrow.svg";
+import sexPage from "../../../assets/images/icons/sexPage.svg";
+import selectArrow from "../../../assets/images/icons/selectArrow.svg";
 
 const options = ["Мужской", "Женский"];
 

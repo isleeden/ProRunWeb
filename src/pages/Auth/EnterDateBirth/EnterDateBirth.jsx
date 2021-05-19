@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import dateBirthPage from "../../assets/images/icons/dateBirthPage.svg";
-import Button from "../../components/Button/Button";
-import AuthLayout from "../../components/layouts/AuthLayout";
-import Select from "../../components/Select/Select";
+import dateBirthPage from "../../../assets/images/icons/dateBirthPage.svg";
+import Button from "../../../components/Button/Button";
+import AuthLayout from "../../../components/layouts/AuthLayout";
+import Select from "../../../components/Select/Select";
 import styles from "./EnterDateBirth.module.scss";
 
 const options1 = ["01", "02", "03", "04", "05", "06", "07", "08", "09"];
