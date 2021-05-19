@@ -1,0 +1,73 @@
+@import "../../../assets/variables.scss";
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $light-grey;
+  padding: 16px 24px;
+}
+
+.listItem:first-child {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.listItem:last-child {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.place {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  margin-right: 16px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 20px;
+  background-color: #333;
+  margin-right: 16px;
+}
+
+.countryNumber {
+  display: flex;
+}
+
+.country {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #333;
+  margin-right: 8px;
+}
+
+.name {
+  font-size: 17px;
+  color: $black;
+  margin-bottom: 8px;
+}
+
+.number {
+  font-size: 17px;
+  color: $dark-grey;
+}
+
+.time {
+  align-self: flex-end;
+}
+
+.even {
+  background-color: $secondary-grey-card;
+}
