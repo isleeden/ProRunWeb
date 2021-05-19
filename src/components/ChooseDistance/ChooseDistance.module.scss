@@ -1,0 +1,22 @@
+@import "../../assets/variables.scss";
+
+.choose {
+  display: flex;
+}
+
+.chooseItem {
+  display: flex;
+  padding: 16px 27px 16px 24px;
+  align-items: center;
+  color: $dark-grey;
+  border-radius: 20px;
+
+  img {
+    margin-right: 13px;
+  }
+}
+
+.chooseItemActive {
+  color: $black;
+  background-color: $light-grey;
+}

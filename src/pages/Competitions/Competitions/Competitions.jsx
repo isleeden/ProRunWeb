@@ -115,7 +115,7 @@ const futureCompetitions = [
 const Competitions = () => {
   return (
     <Layout>
-      <div className={`container ${styles.container}`}>
+      <div className="container">
         <h1 className={styles.title}>Спортивные мероприятия</h1>
         <CompetitionsNav />
         <div className={styles.events}>
