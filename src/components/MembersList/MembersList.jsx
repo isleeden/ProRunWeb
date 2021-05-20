@@ -7,9 +7,9 @@ const MembersList = ({ members }) => {
     <div className={styles.memberList}>
       {members.map((item, index) => {
         if (index % 2 === 0) {
-          return <MemberListItem {...item} even={true}/>;
+          return <MemberListItem {...item} even={true} key={index} />;
         } else {
-          return <MemberListItem {...item} />;
+          return <MemberListItem {...item} key={index} />;
         }
       })}
     </div>

@@ -26,6 +26,7 @@
   justify-content: center;
   border-radius: 14px;
   margin-right: 16px;
+  color: $white;
 }
 
 .row {
@@ -51,6 +52,7 @@
   border-radius: 10px;
   background-color: #333;
   margin-right: 8px;
+  color: $black;
 }
 
 .name {
@@ -69,5 +71,5 @@
 }
 
 .even {
-  background-color: $secondary-grey-card;
+  background-color: rgba($color: $light-grey, $alpha: 0.5);
 }
