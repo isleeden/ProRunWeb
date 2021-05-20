@@ -43,10 +43,15 @@
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: right 16px bottom 16px;
+  margin-right: 16px;
 }
 
 .searchInput::placeholder {
   color: $dark-grey;
+}
+
+.searchInput:focus {
+  border: 1px solid $green;
 }
 
 .result {

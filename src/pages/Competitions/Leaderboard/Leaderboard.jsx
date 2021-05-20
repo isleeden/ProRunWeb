@@ -4,6 +4,7 @@ import ChooseDistance from "../../../components/ChooseDistance/ChooseDistance";
 import styles from "./Leaderboard.module.scss";
 import MembersList from "../../../components/MembersList/MembersList";
 import MembersListItem from "../../../components/MembersList/MemebersListItem/MembersListItem";
+import Filter from "../../../components/Filter/Filter";
 
 const members = [
   {
@@ -105,11 +106,14 @@ const Leaderboard = () => {
             <MembersList members={members} />
           </div>
           <div className={styles.leaderboardRight}>
-            <input
-              className={styles.searchInput}
-              type="search"
-              placeholder="Поиск по имени или BIB"
-            />
+            <div className={styles.row}>
+              <input
+                className={styles.searchInput}
+                type="search"
+                placeholder="Поиск по имени или BIB"
+              />
+              <Filter tooltip="Фильтр таблицы" />
+            </div>
             <div className={styles.subtitle}>Мои Результаты</div>
             <div className={styles.result}>
               <MembersListItem

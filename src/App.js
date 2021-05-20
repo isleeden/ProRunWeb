@@ -1,5 +1,5 @@
 import "./App.scss";
-import Competitions from "./pages/Competitions/CurrentCompetitionDetails/CurrentCompetitionDetails";
+import Competitions from "./pages/Competitions/Leaderboard/Leaderboard";
 
 function App() {
   return (
