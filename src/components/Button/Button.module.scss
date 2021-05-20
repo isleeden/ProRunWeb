@@ -7,9 +7,17 @@
   color: #c0c4ce;
   border-radius: 20px;
   cursor: pointer;
+  border: 1px $light-grey solid;
 }
 
 .buttonActive {
   background-color: $green;
   color: $white;
+  border: 1px $green solid;
+}
+
+.buttonLight {
+  background-color: $white;
+  color: $black;
+  border: 1px $secondary-grey-card solid;
 }
