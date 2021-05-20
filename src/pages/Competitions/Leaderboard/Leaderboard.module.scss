@@ -1,0 +1,90 @@
+@import "../../../assets/variables.scss";
+
+.title {
+  @extend %h1;
+  margin-bottom: 24px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leaderboardLeft {
+  width: 55%;
+}
+
+.leaderboardRight {
+  width: 39%;
+}
+
+.subtitle {
+  color: $black;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 45px 0 24px;
+}
+
+.subtitleRef {
+  margin-left: 7px;
+  text-decoration: none;
+  color: $green;
+}
+
+.searchInput {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px 24px 16px;
+  border-radius: 20px;
+  font-size: 17px;
+  border: 1px solid $secondary-grey-card;
+  outline: none;
+  background-image: url("../../../assets/images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: right 16px bottom 16px;
+}
+
+.searchInput::placeholder {
+  color: $dark-grey;
+}
+
+.result {
+  background-color: $light-grey;
+  border-radius: 24px;
+  padding: 8px 24px 24px;
+}
+
+.distance {
+  padding: 24px;
+  border-radius: 24px;
+  background-color: $white;
+}
+
+.distanceTitle {
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: $dark-grey;
+}
+
+.distanceValue {
+  font-size: 17px;
+  color: $dark-grey;
+
+  span {
+    color: $green;
+  }
+}
+
+.distanceTime {
+  font-size: 17px;
+  color: $black;
+}
+
+.distanceLine {
+  margin-top: 16px;
+  width: 100%;
+  height: 4px;
+  background-color: $green;
+  border-radius: 2px;
+}
