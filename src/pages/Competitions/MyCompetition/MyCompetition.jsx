@@ -11,8 +11,6 @@ import bicycle from "../../../assets/images/icons/bicycle.svg";
 import image1 from "../../../assets/images/currentCompetition1.png";
 import image2 from "../../../assets/images/currentCompetition2.png";
 import image3 from "../../../assets/images/futureCompetition1.png";
-import image4 from "../../../assets/images/futureCompetition2.png";
-import image5 from "../../../assets/images/futureCompetition3.png";
 
 const currentCompetitions = [
   {
