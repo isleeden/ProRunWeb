@@ -1,10 +1,10 @@
 import "./App.scss";
-import Competitions from "./pages/Competitions/MyCompetition/MyCompetition";
+import Profile from "./pages/Profile/CompetitionsHistory/CompetitionsHistory";
 
 function App() {
   return (
     <div className="App">
-      <Competitions />
+      <Profile />
     </div>
   );
 }
