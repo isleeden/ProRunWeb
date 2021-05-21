@@ -1,0 +1,111 @@
+@import "../../../assets/variables.scss";
+
+.avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 56px;
+  margin-right: 40px;
+  background-color: #333;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  color: $black;
+}
+
+.location {
+  margin-top: 8px;
+  margin-bottom: 22px;
+  display: flex;
+}
+
+.locationImg {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.locationText {
+  font-size: 17px;
+  color: $dark-grey;
+}
+
+.aboutListItem {
+  display: flex;
+}
+
+.aboutListItem:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.aboutListItemIcon {
+  width: 24px;
+  margin-right: 16px;
+}
+
+.aboutListItemText {
+  font-size: 17px;
+  color: $black;
+}
+
+.aboutListItemValue {
+  color: $dark-grey;
+  margin-left: 6px;
+}
+
+.aboutListItemRef {
+  color: $green;
+  margin-left: 6px;
+}
+
+.button {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 16px 42px 18px;
+  color: $green;
+  background-color: $light-grey;
+  border-radius: 20px;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.settings {
+  width: 56px;
+  height: 56px;
+  background-image: url("../../../assets/images/icons/settings.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px $secondary-grey-card solid;
+  border-radius: 20px;
+}
+
+.profileHeaderLeft {
+  display: flex;
+  align-items: flex-start;
+}
+
+.historySection {
+  margin-top: 69px;
+}
+
+.historySectionContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.awardsSection {
+  margin-top: 69px;
+}
