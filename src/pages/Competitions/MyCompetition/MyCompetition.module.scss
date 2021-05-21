@@ -1,0 +1,23 @@
+@import "../../../assets/variables.scss";
+
+.title {
+  @extend %h1;
+  margin-bottom: 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.separator {
+  margin-bottom: 69px;
+}
+
+.sectionContent {
+  margin-top: 23px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 30px;
+}
