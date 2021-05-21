@@ -1,0 +1,14 @@
+.title {
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-top: 45px;
+}
+
+.sectionContent {
+  margin-top: 23px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 30px;
+}
