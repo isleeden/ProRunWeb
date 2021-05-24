@@ -1,0 +1,48 @@
+@import "../../../assets/variables.scss";
+
+.top {
+  margin-bottom: 70px;
+}
+
+.topLeft {
+  display: flex;
+}
+
+.imageWrapper {
+  margin-right: 40px;
+
+  img {
+    width: 128px;
+  }
+}
+
+.distance {
+  font-size: 17px;
+  color: $green;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 32px;
+  color: $black;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.congratulation {
+  max-width: 387px;
+  margin: 24px 0 22px;
+  font-size: 17px;
+  color: $dark-grey;
+}
+
+.date {
+  font-size: 17px;
+  color: $dark-grey;
+}
+
+.signatures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

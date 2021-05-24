@@ -9,6 +9,7 @@ const MembersListItem = ({
   avatar,
   country,
   even,
+  transparent,
 }) => {
   let placeStyle = { backgroundColor: "#239A59" };
 
@@ -33,7 +34,11 @@ const MembersListItem = ({
   }
 
   return (
-    <div className={`${styles.listItem} ${even ? styles.even : ""}`}>
+    <div
+      className={`${styles.listItem} ${even ? styles.even : ""} ${
+        transparent ? styles.transparent : ""
+      }`}
+    >
       <div className={styles.row}>
         <p className={styles.place} style={placeStyle}>
           {place}

@@ -1,0 +1,23 @@
+@import "../../../assets/variables.scss";
+
+.button {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid $secondary-grey-card;
+  background-color: $white;
+  cursor: pointer;
+
+  img {
+    width: 24px;
+  }
+}
+
+.button.active {
+  img {
+    fill: $green;
+  }
+}

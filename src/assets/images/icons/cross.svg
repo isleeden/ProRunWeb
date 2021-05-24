@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="Group_5139" data-name="Group 5139" transform="translate(17 -24)">
-    <rect id="Rectangle_1102" data-name="Rectangle 1102" width="24" height="24" transform="translate(-17 24)" fill="none"/>
-    <path id="Path_1444" data-name="Path 1444" d="M-3.586,36l6.293-6.293a1,1,0,0,0-1.414-1.414L-5,34.586l-6.293-6.293a1,1,0,0,0-1.414,0,1,1,0,0,0,0,1.414L-6.414,36l-6.293,6.293a1,1,0,0,0,0,1.414A1,1,0,0,0-12,44a1,1,0,0,0,.707-.293L-5,37.414l6.293,6.293a1,1,0,0,0,1.414-1.414Z" fill="#8790a6"/>
-  </g>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;}</style></defs><title>ProRunIcons</title><rect class="cls-1" width="24" height="24"/><path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/></svg>

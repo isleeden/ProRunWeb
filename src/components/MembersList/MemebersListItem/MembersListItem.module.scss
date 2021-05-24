@@ -73,3 +73,8 @@
 .even {
   background-color: rgba($color: $light-grey, $alpha: 0.5);
 }
+
+.transparent {
+  background-color: transparent;
+  padding: 0;
+}

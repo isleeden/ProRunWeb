@@ -23,22 +23,18 @@
   background-color: $white;
   transform: translate(-50%, -50%);
   border-radius: 48px;
+  overflow: hidden;
 }
 
-.close {
+.controls {
   position: absolute;
-  width: 56px;
-  height: 56px;
-  background-image: url("../../assets/images/icons/cross.svg");
-  background-size: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  top: 24px;
   right: 24px;
-  border: 1px solid $secondary-grey-card;
-  background-color: $white;
-  cursor: pointer;
+  top: 24px;
+  display: flex;
+}
+
+.buttonWrapper:not(:last-child) {
+  margin-right: 16px;
 }
 
 .modalActive {

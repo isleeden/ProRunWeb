@@ -1,0 +1,22 @@
+@import "../../assets/variables.scss";
+
+.signature {
+  text-align: center;
+}
+
+.name {
+  margin-top: 16px;
+  font-size: 15px;
+  color: $black;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 15px;
+  color: $dark-grey;
+}
+
+.disable {
+  opacity: 0.16;
+}
