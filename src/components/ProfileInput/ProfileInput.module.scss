@@ -1,0 +1,23 @@
+@import "../../assets/variables.scss";
+
+.profileInput {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 15px;
+    color: $dark-grey;
+    margin-bottom: 16px;
+  }
+
+  input {
+    box-sizing: border-box;
+    font-size: 17px;
+    color: $black;
+    padding: 16px;
+    border: 1px $dark-grey-input solid;
+    border-radius: 20px;
+  }
+
+  font-size: 17px;
+}
