@@ -1,0 +1,16 @@
+@import "../../../assets/variables.scss";
+
+.title {
+  @extend %h1;
+  margin-bottom: 41px;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
