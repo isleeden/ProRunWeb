@@ -28,9 +28,16 @@
 .linkActive {
   background-color: $light-grey;
   color: $black;
+
+  .linkIcon {
+    fill: $green;
+  }
 }
 
 .linkIcon {
+  width: 24px;
+  height: 24px;
+  fill: $dark-grey;
   margin-right: 18px;
 }
 

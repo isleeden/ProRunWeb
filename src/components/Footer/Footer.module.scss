@@ -40,7 +40,7 @@
 
 .columnListTitle {
   margin-bottom: 38px;
-  font-weight: 700;                       
+  font-weight: 700;
 }
 
 .columnListText {
@@ -63,6 +63,14 @@
   a:not(:last-child) {
     margin-right: 16px;
   }
+}
+
+.mediaLogo {
+  fill: $dark-grey;
+}
+
+.mediaLogo:hover {
+  fill: $green;
 }
 
 .bottom {

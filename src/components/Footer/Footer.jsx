@@ -3,17 +3,17 @@ import styles from "./Footer.module.scss";
 import logo from "../../assets/images/icons/headerLogo.svg";
 import appStore from "../../assets/images/icons/appStore.svg";
 import googlePlay from "../../assets/images/icons/googlePlay.svg";
-import aLogo from "../../assets/images/icons/aLogo.svg"
-import tgLogo from "../../assets/images/icons/telegramLogo.svg"
-import instLogo from "../../assets/images/icons/instagramLogo.svg"
-import fbLogo from "../../assets/images/icons/facebookLogo.svg"
+import { ReactComponent as ALogo } from "../../assets/images/icons/aLogo.svg";
+import { ReactComponent as TelegramLogo } from "../../assets/images/icons/telegramLogo.svg";
+import { ReactComponent as InstagramLogo } from "../../assets/images/icons/instagramLogo.svg";
+import { ReactComponent as FacebookLogo } from "../../assets/images/icons/facebookLogo.svg";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.header}>
-          <img src={logo} className={styles.logo} alt="logo"/>
+          <img src={logo} className={styles.logo} alt="logo" />
           <div className={styles.appLinks}>
             <a className={styles.appLink} href="/">
               <img src={googlePlay} alt="googlePlay" />
@@ -44,10 +44,18 @@ const Footer = () => {
           <div className={styles.columnList}>
             <p className={styles.columnListTitle}>Подписывайтесь</p>
             <div className={styles.mediaList}>
-              <a href="/"><img src={fbLogo} alt="facebook" /></a>
-              <a href="/"><img src={instLogo} alt="instagram" /></a>
-              <a href="/"><img src={tgLogo} alt="telegram" /></a>
-              <a href="/"><img src={aLogo} alt="a" /></a>
+              <a href="/">
+                <FacebookLogo className={styles.mediaLogo} />
+              </a>
+              <a href="/">
+                <InstagramLogo className={styles.mediaLogo} />
+              </a>
+              <a href="/">
+                <TelegramLogo className={styles.mediaLogo} />
+              </a>
+              <a href="/" className={styles.mediaLogo}>
+                <ALogo />
+              </a>
             </div>
           </div>
         </div>
