@@ -1,0 +1,12 @@
+@import "../../assets/variables.scss";
+
+.value {
+  font-size: 17px;
+  color: $black;
+  margin-bottom: 4px;
+}
+
+.key {
+  font-size: 15px;
+  color: $dark-grey;
+}

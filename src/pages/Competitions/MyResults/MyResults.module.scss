@@ -1,0 +1,133 @@
+@import "../../../assets/variables.scss";
+
+.title {
+  @extend %h1;
+  margin-bottom: 44px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+  background-color: #333;
+  margin-right: 16px;
+}
+
+.headerValues {
+  display: flex;
+}
+
+.distance {
+  font-size: 15px;
+  color: $black;
+  display: flex;
+  margin-right: 23px;
+}
+
+.distanceIcon {
+  width: 16px;
+  fill: $green;
+  margin-right: 4px;
+}
+
+.time {
+  font-size: 15px;
+  color: $dark-grey;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: $black;
+  margin-bottom: 8px;
+}
+
+.mapSubtitle {
+  font-size: 15px;
+  color: $dark-grey;
+  margin-bottom: 23px;
+}
+
+.map {
+  margin-bottom: 48px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    border-radius: 48px;
+    background-color: #333;
+    margin-bottom: 24px;
+  }
+}
+
+.mapControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapItem {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $dark-grey;
+}
+
+.mapItem.active {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: $green;
+}
+
+.mapItem:not(:last-child) {
+  margin-right: 8px;
+}
+
+.statisticSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  .sectionTitle {
+    margin-bottom: 21px;
+  }
+}
+
+.statistic {
+  flex-basis: 47%;
+}
+
+.segments {
+  flex-basis: 47%;
+}
+
+.statisticGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.awardsSection {
+  .sectionTitle {
+    margin-bottom: 24px;
+  }
+}
+
+.awardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

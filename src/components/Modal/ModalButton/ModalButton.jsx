@@ -7,7 +7,7 @@ const ModalButton = ({ onClick, image, isActive }) => {
       className={`${styles.button} ${isActive ? styles.active : ""}`}
       onClick={onClick}
     >
-      <img src={image} />
+      <img src={image} alt="button" />
     </div>
   );
 };
