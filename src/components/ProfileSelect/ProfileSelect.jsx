@@ -11,6 +11,7 @@ const ProfileSelect = ({ options, label, value, setValue }) => {
         options={options}
         value={value}
         setValue={setValue}
+        defaultArrowDown={true}
       />
     </div>
   );
