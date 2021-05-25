@@ -3,19 +3,9 @@ import Button from "../../../components/Button/Button";
 import AuthLayout from "../../../components/layouts/AuthLayout";
 import namePage from "../../../assets/images/icons/namePage.svg";
 import styles from "./EnterName.module.scss";
-import avatar from "../../../assets/images/icons/avatarInput.svg";
-import avatarWhite from "../../../assets/images/icons/avatarInputWhite.svg";
+import Avatar from "../../../components/InputAvatar/InputAvatar";
 
 const EnterName = () => {
-  const [file, setFile] = useState(null);
-
-  const handleChange = (event) => {
-    if (event.target.files.length > 0) {
-      const file = URL.createObjectURL(event.target.files[0]);
-      setFile(file);
-    }
-  };
-
   return (
     <div>
       <AuthLayout
@@ -26,18 +16,7 @@ const EnterName = () => {
       >
         <div className={styles.form}>
           <div className={styles.inputWrapper}>
-            <div className={file ? styles.labelHover : ""}>
-              <label
-                className={styles.label}
-                htmlFor="fileInput"
-                style={{
-                  backgroundImage: `url(${file ? file : avatar})`,
-                  backgroundSize: `${file ? "cover" : "auto"}`,
-                }}
-              ></label>
-              <img src={avatarWhite} alt="avatar"/>
-            </div>
-            <input onChange={handleChange} id="fileInput" type="file" />
+            <Avatar className={styles.inputAvatar} />
           </div>
           <div className={styles.nameWrapper}>
             <input

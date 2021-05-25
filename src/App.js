@@ -1,5 +1,5 @@
 import "./App.scss";
-import Profile from "./pages/Competitions/MyResults/MyResults";
+import Profile from "./pages/Auth/EnterName/EnterName";
 
 function App() {
   return (
