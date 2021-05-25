@@ -1,0 +1,16 @@
+@import "../../assets/variables.scss";
+
+.profileSelect {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 15px;
+    color: $dark-grey;
+    margin-bottom: 16px;
+  }
+}
+
+.options {
+  top: 68px;
+}
