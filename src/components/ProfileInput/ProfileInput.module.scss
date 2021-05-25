@@ -17,7 +17,21 @@
     padding: 16px;
     border: 1px $dark-grey-input solid;
     border-radius: 20px;
+    outline: none;
   }
 
-  font-size: 17px;
+  input:focus {
+    border-color: $green;
+  }
+}
+
+.profileInput.disable {
+  label {
+    color: $secondary-grey-card;
+  }
+
+  input {
+    background-color: $secondary-grey-card;
+    border-color: $secondary-grey-card;
+  }
 }
