@@ -27,7 +27,6 @@ const generateYear = () => {
 const years = generateYear();
 
 const EnterDateBirth = () => {
-
   const [value1, setValue1] = useState(options1[0]);
   const [value2, setValue2] = useState(options2[0]);
   const [year, setYear] = useState(years[years.length - 1]);
@@ -40,19 +39,15 @@ const EnterDateBirth = () => {
       steps="Шаг 4 из 4"
     >
       <div className={styles.selects}>
-        <Select
-          value={value1}
-          options={options1}
-          setValue={setValue1}
-          width="82px"
-        />
-        <Select
-          value={value2}
-          options={options2}
-          setValue={setValue2}
-          width="142px"
-        />
-        <Select value={year} options={years} setValue={setYear} width="102px" />
+        <div className={styles.selectNumber}>
+          <Select value={value1} options={options1} setValue={setValue1} />
+        </div>
+        <div className={styles.selectMonth}>
+          <Select value={value2} options={options2} setValue={setValue2} />
+        </div>
+        <div className={styles.selectYear}>
+          <Select value={year} options={years} setValue={setYear} />
+        </div>
       </div>
       <Button buttonText="Далее" valid={false} />
     </AuthLayout>
