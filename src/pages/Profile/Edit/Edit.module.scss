@@ -1,0 +1,65 @@
+@import "../../../assets/variables.scss";
+
+.title {
+  @extend %h1;
+  margin-bottom: 44px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.inputAvatar {
+  width: 128px;
+  margin-right: 40px;
+
+  label {
+    height: 128px;
+    border-radius: 56px;
+  }
+}
+
+.general {
+  margin: 69px 0;
+}
+
+.sectionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 30px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.avatarDesc {
+  width: 467px;
+  margin-bottom: 22px;
+  font-size: 17px;
+  color: $dark-grey;
+}
+
+.changeAvatar {
+  font-size: 17px;
+  font-weight: 600;
+  color: $green;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 15px;
+    color: $dark-grey;
+    margin-bottom: 16px;
+  }
+}
+
+.security {
+  margin-top: 69px;
+}
