@@ -1,0 +1,17 @@
+@import "../../assets/variables.scss";
+
+.button {
+  display: block;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: $white;
+  border-radius: 28px;
+  border: 1px solid $secondary-grey-card;
+  background-image: url("../../assets/images/icons/selectArrow.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  z-index: 2;
+  cursor: pointer;
+}
