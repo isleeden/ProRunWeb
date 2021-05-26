@@ -13,27 +13,6 @@
   border-radius: 24px;
 }
 
-.distance {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 13px;
-  color: $white;
-  padding: 8px 16px;
-  background-color: $green;
-  border-radius: 16px;
-}
-
-.icon {
-  margin-right: 11px;
-}
-
-.button {
-  background-color: $white;
-  border-radius: 12px;
-  padding: 7px 16px 8px 21px;
-}
-
 .title {
   font-size: 17px;
   font-weight: 700;
@@ -42,12 +21,18 @@
   margin-bottom: 8px;
 }
 
+.row {
+  display: flex;
+}
+
+.category {
+  font-size: 15px;
+  color: $green;
+  margin-right: 26px;
+}
+
 .date {
   display: flex;
   font-size: 15px;
   color: $dark-grey;
-}
-
-.dateIcon {
-  margin-right: 8px;
 }

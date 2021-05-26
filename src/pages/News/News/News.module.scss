@@ -1,0 +1,58 @@
+@import "../../../assets/variables.scss";
+
+.container {
+  padding: 0 15px;
+}
+
+.title {
+  @extend %h1;
+  margin-bottom: 24px;
+}
+
+.events {
+  margin-top: 45px;
+}
+
+.eventSection:not(:last-child) {
+  margin-bottom: 69px;
+}
+
+.sectionContent {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.moreCurrentCompetitions {
+  display: block;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: $white;
+  border-radius: 28px;
+  right: -28px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(-90deg);
+  border: 1px solid $secondary-grey-card;
+  background-image: url("../../../assets/images/icons/selectArrow.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+}
+
+.eventPastWrapper {
+  width: 47%;
+}
+
+.sectionGrid {
+  margin-top: 23px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sectionSlider {
+  margin-top: 24px;
+  position: relative;
+}
