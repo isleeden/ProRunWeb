@@ -1,0 +1,11 @@
+.controlLeft {
+  top: 50%;
+  left: -28px;
+  transform: translate(0, -50%) rotate(90deg);
+}
+
+.controlRight {
+  top: 50%;
+  right: -28px;
+  transform: translate(0, -50%) rotate(270deg);
+}
