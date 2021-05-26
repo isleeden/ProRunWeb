@@ -192,18 +192,21 @@ const Competitions = () => {
                   title="Скидки до 70% на спорттовары от Nike, специально для пользователей ProRun"
                   category="Реклама"
                   date="27 ноября 2020 г"
+                  className={styles.newsCard}
                   image={image1}
                 />
                 <NewsCard
                   title="Итоги Самаркандского полумарафона, а также интервью с участниками"
                   category="Новости"
                   date="27 ноября 2020 г"
+                  className={styles.newsCard}
                   image={image3}
                 />
                 <NewsCard
                   title="10 рекомедаций от Sponser, которые помогут вам восстановиться после пр…"
                   category="Реклама"
                   date="15 сентябрь 2020 г"
+                  className={styles.newsCard}
                   image={image5}
                 />
               </div>

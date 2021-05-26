@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./NewsCard.module.scss";
 
-const NewsCard = ({ title, category, date, image }) => {
+const NewsCard = ({ title, category, date, image, className }) => {
   return (
     <div>
       <div
-        className={styles.card}
+        className={`${styles.card} ${className}`}
         style={{ backgroundImage: `url(${image})` }}
       ></div>
       <div>
