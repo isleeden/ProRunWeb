@@ -1,5 +1,5 @@
 import "./App.scss";
-import Page from "./pages/Profile/Settings/Settings";
+import Page from "./pages/Auth/EnterDateBirth/EnterDateBirth";
 
 function App() {
   return (
