@@ -1,0 +1,18 @@
+@import "../../assets/variables.scss";
+
+.title {
+  font-size: 20px;
+  color: $black;
+  margin-bottom: 21px;
+}
+
+.text {
+  font-size: 17px;
+  white-space: pre-line;
+  color: $dark-grey;
+  line-height: 26px;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 21px;
+}

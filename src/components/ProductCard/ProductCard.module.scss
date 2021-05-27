@@ -1,0 +1,18 @@
+@import "../../assets/variables.scss";
+
+.cardImage {
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 6px;
+}
+
+.type {
+  font-size: 15px;
+  color: $dark-grey;
+}
