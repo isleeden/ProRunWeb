@@ -1,4 +1,4 @@
-@import '../../assets/variables.scss';
+@import "../../assets/variables.scss";
 
 .card {
   width: 255px;
@@ -36,4 +36,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+  font-size: 13px;
+}
+
+.distanceIcon {
+  width: 16px;
+  fill: $green;
 }

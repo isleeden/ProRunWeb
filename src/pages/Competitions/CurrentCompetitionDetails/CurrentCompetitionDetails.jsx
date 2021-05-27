@@ -3,7 +3,7 @@ import Layout from "../../../components/layouts/Layout";
 import styles from "./CurrentCompetitionDetails.module.scss";
 import Button from "../../../components/Button/Button";
 import dateIcon from "../../../assets/images/icons/dateIcon.svg";
-import run from "../../../assets/images/icons/run.svg"
+import { ReactComponent as Run } from "../../../assets/images/icons/run.svg";
 
 const CurrentCompetitionDetails = () => {
   return (
@@ -75,8 +75,8 @@ const CurrentCompetitionDetails = () => {
               </p>
             </div>
             <div className={styles.buttons}>
-              <Button buttonText="Отказаться" valid />
-              <Button buttonText="Принять условия" light />
+              <Button buttonText="Отказаться" light />
+              <Button buttonText="Принять условия" valid />
             </div>
           </div>
           <div className={styles.detailsRight}>
@@ -99,7 +99,7 @@ const CurrentCompetitionDetails = () => {
                   </div>
                 </div>
                 <div className={styles.distance}>
-                  <img className={styles.distanceIcon} src={run} alt="" />
+                  <Run className={styles.distanceIcon} />
                   <p className={styles.distanceText}>5 км</p>
                 </div>
               </div>

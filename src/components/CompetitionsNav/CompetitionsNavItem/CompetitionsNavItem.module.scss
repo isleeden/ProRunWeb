@@ -9,11 +9,17 @@
   color: $dark-grey;
 }
 
+.icon {
+  width: 24px;
+  margin-right: 12px;
+  fill: $dark-grey;
+}
+
 .navItemActive {
   background-color: $light-grey;
   color: $black;
-}
 
-.icon {
-  margin-right: 12px;
+  .icon {
+    fill: $green;
+  }
 }

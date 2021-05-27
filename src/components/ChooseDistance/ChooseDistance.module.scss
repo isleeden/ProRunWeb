@@ -10,13 +10,18 @@
   align-items: center;
   color: $dark-grey;
   border-radius: 20px;
-
-  img {
-    margin-right: 13px;
-  }
 }
 
-.chooseItemActive {
+.distanceIcon {
+  width: 24px;
+  fill: $dark-grey;
+  margin-right: 8px;
+}
+
+.chooseItem.active {
   color: $black;
   background-color: $light-grey;
+  .distanceIcon {
+    fill: $green;
+  }
 }

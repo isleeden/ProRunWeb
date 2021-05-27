@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MyResults.module.scss";
 import Award from "../../../components/Award/Award";
 import Layout from "../../../components/layouts/Layout";
-import { ReactComponent as Run } from "../../../assets/images/icons/ProRunIcons_Run.svg";
+import { ReactComponent as Run } from "../../../assets/images/icons/run.svg";
 import Statistic from "../../../components/Statistic/Statistic";
 import award1 from "../../../assets/images/award1.png";
 import award2 from "../../../assets/images/award2.png";

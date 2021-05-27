@@ -1,10 +1,10 @@
 import "./App.scss";
-import Profile from "./pages/News/Article/Article";
+import Page from "./pages/Profile/Settings/Settings";
 
 function App() {
   return (
     <div className="App">
-      <Profile />
+      <Page />
     </div>
   );
 }

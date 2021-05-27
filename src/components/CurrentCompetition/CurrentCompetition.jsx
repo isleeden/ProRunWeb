@@ -6,7 +6,7 @@ const CurrentCompetition = ({
   title,
   members,
   distance,
-  icon,
+  Icon,
   image,
   dark,
 }) => {
@@ -17,7 +17,7 @@ const CurrentCompetition = ({
     >
       <p className={styles.title}>{title}</p>
       <div className={`${styles.distance} ${dark ? styles.dark : ""}`}>
-        <img className={styles.distanceImage} src={icon} alt="icon" />
+        <Icon className={styles.distanceImage} />
         <p className={styles.distanceText}>{distance}</p>
       </div>
       <div className={styles.footer}>

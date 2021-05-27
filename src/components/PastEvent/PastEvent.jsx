@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./PastEvent.module.scss";
 import dateIcon from "../../assets/images/icons/dateIcon.svg";
-import Select from "../../components/DistanceSelect/DistanceSelect"
+import Select from "../../components/DistanceSelect/DistanceSelect";
 
 const PastEvent = ({ title, children, date, image, options, icon }) => {
   const [distanceValue, setDistanceValue] = useState(options[0]);
@@ -20,7 +20,12 @@ const PastEvent = ({ title, children, date, image, options, icon }) => {
           </div>
         </div>
         <div className={styles.select}>
-          <Select value={distanceValue} setValue={setDistanceValue} options={options} icon={icon}/>
+          <Select
+            value={distanceValue}
+            setValue={setDistanceValue}
+            options={options}
+            icon={icon}
+          />
         </div>
       </div>
       {children}

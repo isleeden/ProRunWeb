@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./FutureCompetition.module.scss";
-import dateIcon from "../../assets/images/icons/dateIcon.svg"
+import dateIcon from "../../assets/images/icons/dateIcon.svg";
 
-const FutureCompetition = ({ distance, date, icon, title, image }) => {
+const FutureCompetition = ({ distance, date, Icon, title, image }) => {
   return (
     <div className={styles.competition}>
       <div
@@ -10,7 +10,7 @@ const FutureCompetition = ({ distance, date, icon, title, image }) => {
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className={`${styles.distance}`}>
-          <img className={styles.distanceImage} src={icon} alt="icon" />
+          <Icon className={styles.distanceImage} />
           <p className={styles.distanceText}>{distance}</p>
         </div>
       </div>

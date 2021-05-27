@@ -4,7 +4,6 @@ import Layout from "../../../components/layouts/Layout";
 import gift from "../../../assets/images/icons/gift.svg";
 import cup from "../../../assets/images/icons/cup.svg";
 import shield from "../../../assets/images/icons/shield.svg";
-import Section from "../../../components/ProfileSection/ProfileSection";
 import ProfileSection from "../../../components/ProfileSection/ProfileSection";
 import ProfileHistoryCard from "../../../components/ProfileHistoryCard/ProfileHistoryCard";
 import Award from "../../../components/Award/Award";

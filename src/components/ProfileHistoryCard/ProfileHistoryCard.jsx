@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ProfileHistoryCard.module.scss";
-import walk from "../../assets/images/icons/walkGreen.svg";
+import { ReactComponent as Walk } from "../../assets/images/icons/walk.svg";
 import timeIcon from "../../assets/images/icons/time.svg";
 
 const ProfileHistoryCard = ({ image, date, title, time, distance }) => {
@@ -10,7 +10,7 @@ const ProfileHistoryCard = ({ image, date, title, time, distance }) => {
       <p className={styles.title}>{title}</p>
       <div className={styles.row}>
         <div className={styles.secondaryRow}>
-          <img className={styles.icon} src={walk} alt="" />
+          <Walk className={styles.icon} />
           {distance}
         </div>
         <div className={styles.secondaryRow}>

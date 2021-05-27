@@ -5,7 +5,7 @@ import dateIcon from "../../assets/images/icons/dateIcon.svg";
 const MyCompetitionCard = ({
   image,
   isFuture,
-  icon,
+  Icon,
   distance,
   title,
   date,
@@ -14,8 +14,8 @@ const MyCompetitionCard = ({
     <div>
       <div className={styles.card} style={{ backgroundImage: `url(${image})` }}>
         <p className={styles.distance}>
-          <img className={styles.icon} src={icon} />
-          {distance}
+          <Icon className={styles.distanceIcon} />
+          <p>{distance}</p>
         </p>
         <div className={styles.button}>{isFuture ? "Подробнее" : "Старт"}</div>
       </div>

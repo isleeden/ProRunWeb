@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./CurrentCompetitionCard.module.scss";
-import Button from "../Button/Button"
+import Button from "../Button/Button";
 
 const CurrentCompetitionCard = ({
-  icon,
+  Icon,
   distance,
   image,
   title,
@@ -16,14 +16,15 @@ const CurrentCompetitionCard = ({
         style={{ backgroundImage: `url(${image})` }}
       ></div>
       <div className={styles.body}>
-        <div className={styles.title}>
-          {title}
-        </div>
+        <div className={styles.title}>{title}</div>
         <div className={styles.distance}>
-          <img src={icon} className={styles.distanceIcon} />
+          <Icon className={styles.distanceIcon} />
           {distance}
         </div>
-        <Button valid={!iSparticipate} buttonText={iSparticipate ? "Отказаться" : "Участвовать"} />
+        <Button
+          valid={!iSparticipate}
+          buttonText={iSparticipate ? "Отказаться" : "Участвовать"}
+        />
       </div>
     </div>
   );

@@ -6,9 +6,9 @@ import Section from "../../../components/Section/Section";
 import CurrentCompetition from "../../../components/CurrentCompetition/CurrentCompetition";
 import FutureCompetition from "../../../components/FutureCompetition/FutureCompetition";
 import MembersList from "../../../components/MembersList/MembersList";
-import walk from "../../../assets/images/icons/walk.svg";
-import run from "../../../assets/images/icons/run.svg";
-import bicycle from "../../../assets/images/icons/bicycle.svg";
+import { ReactComponent as run } from "../../../assets/images/icons/run.svg";
+import { ReactComponent as bicycle } from "../../../assets/images/icons/bicycle.svg";
+import { ReactComponent as walk } from "../../../assets/images/icons/walk.svg";
 import image1 from "../../../assets/images/currentCompetition1.png";
 import image2 from "../../../assets/images/currentCompetition2.png";
 import image3 from "../../../assets/images/futureCompetition1.png";
@@ -75,14 +75,14 @@ const currentCompetitions = [
     title: "Женский осенний забег",
     distance: "2, 5 и 10 км",
     members: 23345,
-    icon: run,
+    Icon: run,
     image: image1,
   },
   {
     title: "Закрытие сезона 2020 – мужской велопробег",
     distance: "10, 21 и 42 км",
     members: 232,
-    icon: bicycle,
+    Icon: bicycle,
     image: image2,
     dark: true,
   },
@@ -93,21 +93,21 @@ const futureCompetitions = [
     title: "Закрытие сезона 2020 веломарафон Самарканд",
     distance: "42 км",
     date: "с 10 по 30 октября, 2020 г",
-    icon: bicycle,
+    Icon: bicycle,
     image: image3,
   },
   {
     title: "Ходьба в центре Ташкента на 5, 10 и 15 км среди любителей",
     distance: "15 км",
     date: "с 15 октября по 15 ноября, 2020 г",
-    icon: walk,
+    Icon: walk,
     image: image4,
   },
   {
     title: "Ходьба в центре Ташкента среди детей",
     distance: "15 км",
     date: "с 15 октября по 15 ноября, 2020 г",
-    icon: walk,
+    Icon: walk,
     image: image5,
   },
 ];
@@ -158,7 +158,7 @@ const Competitions = () => {
                     title="ProRun Women: Empowerment"
                     date="30 августа, 2020 г"
                     options={["5км", "10км", "15км"]}
-                    icon={run}
+                    Icon={run}
                   >
                     <MembersList members={members} />
                   </PastEvent>
@@ -168,7 +168,7 @@ const Competitions = () => {
                     title="Благотварительный забег Samarkand Online Marathon 2020"
                     date="29 сентября, 2020 г"
                     options={["5км", "10км", "15км"]}
-                    icon={run}
+                    Icon={run}
                   >
                     <MembersList members={members} />
                   </PastEvent>

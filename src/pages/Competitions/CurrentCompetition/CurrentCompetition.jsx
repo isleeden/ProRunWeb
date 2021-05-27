@@ -9,10 +9,10 @@ import infoBlockIcon2 from "../../../assets/images/icons/infoBlockIcon2.svg";
 import infoBlockIcon3 from "../../../assets/images/icons/infoBlockIcon3.svg";
 import infoBlockIcon4 from "../../../assets/images/icons/infoBlockIcon4.svg";
 import infoBlockIcon5 from "../../../assets/images/icons/infoBlockIcon5.svg";
-import athletica from "../../../assets/images/athletica.svg";
-import garmin from "../../../assets/images/garmin.svg";
-import meizu from "../../../assets/images/meizu.svg";
-import prorun from "../../../assets/images/prorun.svg";
+import { ReactComponent as Athletica } from "../../../assets/images/partner1.svg";
+import { ReactComponent as Garmin } from "../../../assets/images/partner2.svg";
+import { ReactComponent as Meizu } from "../../../assets/images/partner3.svg";
+import { ReactComponent as Prorun } from "../../../assets/images/prorun.svg";
 import ChooseDistance from "../../../components/ChooseDistance/ChooseDistance";
 import MembersList from "../../../components/MembersList/MembersList";
 
@@ -106,16 +106,16 @@ const CurrentCompetition = () => {
           <p className={styles.infoTitle}>Партнёры мероприятия</p>
           <div className={styles.partnerCards}>
             <div className={styles.partnerCard}>
-              <img className={styles.partnerImg} src={meizu} alt="" />
+              <Meizu className={styles.partnerImage} />
             </div>
             <div className={styles.partnerCard}>
-              <img className={styles.partnerImg} src={athletica} alt="" />
+              <Athletica className={styles.partnerImage} />
             </div>
             <div className={styles.partnerCard}>
-              <img className={styles.partnerImg} src={prorun} alt="" />
+              <Prorun className={styles.partnerImage} />
             </div>
             <div className={styles.partnerCard}>
-              <img className={styles.partnerImg} src={garmin} alt="" />
+              <Garmin className={styles.partnerImage} />
             </div>
           </div>
         </div>
