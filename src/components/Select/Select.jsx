@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Select.module.scss";
 import selectArrow from "../../assets/images/icons/selectArrow.svg";
+import Dropdown from "../Dropdown/Dropdown";
 
 const Select = ({
   options = [],
@@ -11,18 +12,13 @@ const Select = ({
 }) => {
   const [isSelectOpen, setIsSelectOpen] = useState(false);
 
-  const optionsElement = useRef();
   const selectElement = useRef();
-
-  const optionClickHandler = (index) => {
-    setValue(options[index]);
-    setIsSelectOpen(false);
-  };
+  const optionsElement = useRef();
 
   const outsideSelectClickHandler = (e) => {
     if (
-      !optionsElement.current.contains(e.target) &&
-      !selectElement.current.contains(e.target)
+      !selectElement.current.contains(e.target) &&
+      !optionsElement.current.contains(e.target)
     ) {
       setIsSelectOpen(false);
     }
@@ -34,6 +30,11 @@ const Select = ({
       document.removeEventListener("mousedown", outsideSelectClickHandler);
     };
   }, []);
+
+  const optionClickHandler = (index) => {
+    setValue(options[index]);
+    setIsSelectOpen(false);
+  };
 
   return (
     <div className={styles.selectWrapper}>
@@ -51,11 +52,11 @@ const Select = ({
           alt="arrow"
         />
       </div>
-      <div
-        className={`${styles.options} ${
-          isSelectOpen ? styles.optionsActive : ""
-        } ${className}`}
-        ref={optionsElement}
+      <Dropdown
+        className={`${styles.options} ${className}`}
+        isActive={isSelectOpen}
+        setIsActive={setIsSelectOpen}
+        reference={optionsElement}
       >
         {options.map((item, index) => {
           return (
@@ -68,7 +69,7 @@ const Select = ({
             </div>
           );
         })}
-      </div>
+      </Dropdown>
     </div>
   );
 };

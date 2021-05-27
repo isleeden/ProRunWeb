@@ -44,16 +44,11 @@
   max-height: 276px;
   box-sizing: border-box;
   background-color: $white;
-  position: absolute;
   top: -292px;
   left: 0;
   border: 1px $dark-grey-input solid;
   padding: 8px;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.55s opacity, 0.55s visibility;
   border-radius: 16px;
-  overflow-y: auto;
   box-shadow: 0px 4px 16px rgba($color: #1e1e26, $alpha: 0.16);
 }
 
@@ -65,9 +60,4 @@
 
 .option:hover {
   background-color: #f5f7fb;
-}
-
-.optionsActive {
-  visibility: visible;
-  opacity: 1;
 }

@@ -1,0 +1,12 @@
+.options {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.55s opacity, 0.55s visibility;
+  overflow-y: auto;
+}
+
+.options.active {
+  visibility: visible;
+  opacity: 1;
+}
